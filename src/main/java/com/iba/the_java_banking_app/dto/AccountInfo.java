@@ -1,17 +1,24 @@
 package com.iba.the_java_banking_app.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
+import lombok.Builder;
+import lombok.Setter;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+import java.math.BigDecimal;
 
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class AccountInfo {
-    private String acccountName;
-    private String accountBalance;
+    private String accountName;
+
+    private BigDecimal accountBalance;
     private String accountNumber;
+
 
 }

@@ -12,12 +12,12 @@ import java.time.LocalDateTime;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @Builder
 @Entity
 @Table(name = "tbl_user")
-
 public class User {
-    // Defininig fields to be created in the database;
+    // Defining fields to be created in the database;
 
     // Add spring web on dependencies
     @Id

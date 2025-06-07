@@ -3,6 +3,12 @@ package com.iba.the_java_banking_app.utils;
 import java.time.Year;
 
 public class AccountUtils {
+    public static final String ACCOUNT_EXISTS_CODE = "001";
+    public static final String ACCOUNT_EXISTS_MESSAGE = "User already has an account";
+    public static final String ACCOUNT_CREATION_SUCCESS = "002";
+    public static final String ACCOUNT_CREATION_MESSAGE = "User created successfully";
+
+
     public static String generateAccountNumber(){
         /*
          * year +randomSixDigits
@@ -22,5 +28,4 @@ public class AccountUtils {
 
         return accountNumber.append(year).append(randomNumber).toString();
     }
-
 }

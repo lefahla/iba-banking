@@ -1,16 +1,20 @@
 package com.iba.the_java_banking_app.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
+import lombok.Builder;
+import lombok.Setter;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
-import java.math.BigDecimal;
-@Data
-@Builder
+
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserRequests {
+@Data
+@Builder
+public class UserRequest {
     private String firstName;
     private String otherName;
     private String lastName;
